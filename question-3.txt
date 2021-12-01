@@ -1,0 +1,18 @@
+const getTotalValue = () =>
+{
+    let people= []
+    let totalValue = 0
+    const fs = require("fs");
+    let textByLine = fs.readFileSync("file.txt").toString().split("\r\n");
+    let i;
+    for (i=1; i < textByLine.length; i++)
+    {
+        people.push(textByLine[i].split(','))
+    }
+    people.forEach(person => {
+        totalValue += Number(person[2])
+    });
+    return totalValue
+}
+
+console.log(getTotalValue())
