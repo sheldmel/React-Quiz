@@ -1,0 +1,14 @@
+const isNumberDivisible = (NUMBER) =>{
+    if (NUMBER % 2 === 0){
+        console.log('foo')
+    }
+    if (NUMBER % 7 === 0){
+        console.log('bar')
+    }
+    if (NUMBER % 14 === 0){
+        console.log('foobar')
+    }
+    else{
+        console.log(NUMBER)
+    } 
+}
